@@ -6,22 +6,22 @@
 # in JoeDorseyJr/homebrew-tap with the release version and SHA256 checksums.
 class MagenticalServer < Formula
   desc "Daemon server and mgtl CLI for Magentical mobile AI coding control"
-  homepage "https://github.com/JoeDorseyJr/magentical"
+  homepage "https://github.com/JoeDorseyJr/magentical-releases"
   version "0.0.0"
 
   on_macos do
-    url "https://github.com/JoeDorseyJr/magentical/releases/download/v#{version}/magentical-server_#{version}_darwin_all.tar.gz"
+    url "https://github.com/JoeDorseyJr/magentical-releases/releases/download/v#{version}/magentical-server_#{version}_darwin_all.tar.gz"
     sha256 "REPLACE_WITH_DARWIN_ALL_SHA256"
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/JoeDorseyJr/magentical/releases/download/v#{version}/magentical-server_#{version}_linux_arm64.tar.gz"
+      url "https://github.com/JoeDorseyJr/magentical-releases/releases/download/v#{version}/magentical-server_#{version}_linux_arm64.tar.gz"
       sha256 "REPLACE_WITH_LINUX_ARM64_SHA256"
     end
 
     on_intel do
-      url "https://github.com/JoeDorseyJr/magentical/releases/download/v#{version}/magentical-server_#{version}_linux_amd64.tar.gz"
+      url "https://github.com/JoeDorseyJr/magentical-releases/releases/download/v#{version}/magentical-server_#{version}_linux_amd64.tar.gz"
       sha256 "REPLACE_WITH_LINUX_AMD64_SHA256"
     end
   end
